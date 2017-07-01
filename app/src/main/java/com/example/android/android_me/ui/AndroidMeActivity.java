@@ -35,7 +35,8 @@ public class AndroidMeActivity extends AppCompatActivity {
         BodyPartFragment headFragment = new BodyPartFragment();
 
         // TODO (4) Set the list of image id's for the head fragment and set the position to the second image in the list
-
+          headFragment.setImageIds(AndroidImageAssets.getHeads());
+          headFragment.setListIndex(10);
         // Add the fragment to its container using a FragmentManager and a Transaction
         FragmentManager fragmentManager = getSupportFragmentManager();
 
